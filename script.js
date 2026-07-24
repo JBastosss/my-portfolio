@@ -34,11 +34,11 @@
 
 const meusProjetos = [
   {
-    titulo: "Gerenciador de Tarefas",
-    descricao: "Aplicação web para organizar tarefas diárias, com criação, edição, marcação de concluído e filtros por status.",
+    titulo: "LinkTree",
+    descricao: "Chama a atenção para o seu perfil com um hub de links personalizado, estilo LinkTree, feito com HTML, CSS e JavaScript.",
     tecnologias: ["HTML5", "CSS3", "JavaScript"],
-    linkGithub: "https://github.com/seu-usuario/gerenciador-de-tarefas",
-    linkDemo: "#"
+    linkGithub: "https://github.com/JBastosss/linktree",
+    linkDemo: "https://jblinktree.netlify.app/"
   },
   {
     titulo: "API de Biblioteca",
