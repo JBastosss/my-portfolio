@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julio Bastos — Desenvolvedor de Sistemas</title>
+<meta name="description" content="Portfólio de Julio Bastos, Desenvolvedor de Sistemas.">
+
+<!-- Google Fonts: Space Grotesk (títulos), Inter (texto), JetBrains Mono (código/labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ======================= HEADER / MENU FIXO ======================= -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#topo" class="navbar__brand">JB<span class="navbar__brand-dot">.</span></a>
+
+    <nav class="navbar__nav" id="navMenu">
+      <a href="#sobre" class="nav-link active">Sobre</a>
+      <a href="#habilidades" class="nav-link">Habilidades</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ======================= SOBRE MIM ======================= -->
+  <section id="sobre" class="section hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow"><span class="eyebrow__prompt">$</span> sobre-mim <span class="cursor"></span></p>
+        <h1 class="hero__title">Julio Bastos</h1>
+        <p class="hero__role">Desenvolvedor de Sistemas</p>
+        <p class="hero__bio">
+          Técnico em Desenvolvimento de Sistemas pela ETEC. Apaixonado por tecnologia
+          e focado em evoluir constantemente para crescer e me destacar no mercado de software.
+        </p>
+        <div class="hero__actions">
+          <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+          <a href="#contato" class="btn btn--ghost">Falar Comigo</a>
+        </div>
+      </div>
+
+      <div class="hero__panel" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="terminal__title">perfil.js</span>
+          </div>
+          <div class="terminal__body">
+<pre><code><span class="tk-kw">const</span> <span class="tk-var">dev</span> <span class="tk-op">=</span> {
+  <span class="tk-key">nome</span>: <span class="tk-str">"Julio Bastos"</span>,
+  <span class="tk-key">cargo</span>: <span class="tk-str">"Dev de Sistemas"</span>,
+  <span class="tk-key">stack</span>: [<span class="tk-str">"Python"</span>, <span class="tk-str">"Java"</span>, <span class="tk-str">"JS"</span>],
+  <span class="tk-key">status</span>: <span class="tk-str">"aprendendo sempre"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= HABILIDADES ======================= -->
+  <section id="habilidades" class="section">
+    <div class="container">
+      <p class="eyebrow"><span class="eyebrow__prompt">$</span> habilidades <span class="cursor"></span></p>
+      <h2 class="section__title">Minhas Habilidades</h2>
+
+      <div class="skills-grid">
+
+        <article class="skill-card">
+          <h3 class="skill-card__title">Linguagens</h3>
+          <ul class="skill-card__list">
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="skill-card__title">Desenvolvimento Web</h3>
+          <ul class="skill-card__list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript ES6+</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3 class="skill-card__title">Ferramentas</h3>
+          <ul class="skill-card__list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= PROJETOS ======================= -->
+  <!-- Os cards desta seção são gerados dinamicamente pelo script.js
+       a partir do array "meusProjetos". Não edite o HTML para
+       adicionar projetos novos — edite apenas o script.js. -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <p class="eyebrow"><span class="eyebrow__prompt">$</span> projetos <span class="cursor"></span></p>
+      <h2 class="section__title">Meus Projetos</h2>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Cards injetados via JavaScript (ver script.js -> renderizarProjetos) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CONTATO ======================= -->
+  <section id="contato" class="section section--contact">
+    <div class="container">
+      <p class="eyebrow"><span class="eyebrow__prompt">$</span> contato <span class="cursor"></span></p>
+      <h2 class="section__title">Vamos Conversar?</h2>
+      <p class="contact__text">
+        Estou aberto a oportunidades, projetos e trocas sobre tecnologia.
+        Me chame em qualquer um dos canais abaixo.
+      </p>
+
+      <div class="contact__links">
+        <a href="mailto:julio.bastos@email.com" class="btn btn--primary">E-mail</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>&copy; <span id="anoAtual"></span> Julio Bastos. Todos os direitos reservados.</p>
+    <p class="footer__tag">feito com <span class="tk-str">&lt;/&gt;</span> e café</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
